@@ -1,10 +1,6 @@
 /* Change history 
     date: 9/20/22
     Description: 
-        - replaced all div and span tags with semantic HTML tags, to give the document semantic  meaning and structure, follow accessibilitiy standards, and optimize for search engines
-        - added alt properties to all img elements, following accessibilitiy standards 
-        - changed the content of the title element to be more concise and descriptive  
-        - added an id attribute to search-engine-optimization section, fixing the broken hypertext in the header
         - removed the style rule for the p tag, since the default font-size is 16px, which comes from the default stylesheet, which shows up in Computed tab of DevTools
         - consolidated the CSS code and organized to follow semantic structure of HTML
         - added comments  
