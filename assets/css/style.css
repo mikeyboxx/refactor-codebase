@@ -1,28 +1,31 @@
-/* Change history 
-    date: 9/20/22
+/* Release history 
+    date: 9/22/22
     Description: 
         - removed the style rule for the p tag, since the default font-size is 16px, which comes from the default stylesheet, which shows up in Computed tab of DevTools
         - consolidated the CSS code and organized to follow semantic structure of HTML
         - added comments  
 */
 
+/* Reset Box sizing attributes for all elements */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* set the background color of the entire page */
 body {
     background-color: #d9dcd6;
 }
 
+/* make the links not underlined and set the font color of the link text */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
 
-/* Header section containing the navigation links and emphasized text  */
+/* set the type of font used for the company logo and navigation links */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -30,17 +33,20 @@ a {
     color: #ffffff;
 }
 
+/* change the display behavior of the heading element */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* style the character "seo" is the company's name, to emphasize the serivce offered */
 .header h1 .seo {
     color: #d9dcd6;
     /* override the em default font-style     */
     font-style: normal;
 }
 
+/* override the parent container font and position navigation links to the right of the page */
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -49,16 +55,18 @@ a {
     font-size: 20px;
 }
 
+/* change the display behavior of unordered list items to not have a bullet */
 .header nav ul {
     list-style-type: none;
 }
 
+/* change the display behavior of the unordered list items  */
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-/* Article section containing a picture representing a digital marketing meeting */
+/* display a marketing image using CSS to style an article tag, indtead of using an img tag  */
 .hero {
     height: 800px;
     width: 100%;
@@ -68,13 +76,14 @@ a {
     background-position: center;
 }
 
-/* Content section containing a list of various service offered */
+/* main section containing a list of various service offered, which is it's own section */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* style the main container's children */
 .content section {
     margin-bottom: 20px;
     padding: 50px;
